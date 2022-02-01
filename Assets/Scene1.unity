@@ -123,6 +123,94 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &1527086018
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -739331571260811754, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 3426892894152131819, guid: dc0699ad765a048178908b674c540685, type: 3}
+    - target: {fileID: 8608156727635080529, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_Name
+      value: Apple Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080529, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_TagString
+      value: Apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -739331571260811754, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+--- !u!1 &1527086019 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8608156727635080529, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+  m_PrefabInstance: {fileID: 1527086018}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1527086020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527086019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c263e8fe8db6b499b9663cdc410b9c6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  applePrefab: {fileID: 0}
+  speed: 0.1
+  leftAndRightEdge: 20
+  chanceToChangeDirection: 10
+  secondsBetweenAppleDrop: 3
 --- !u!1 &1546297177
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,9 +355,9 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  field of view: 30
+  orthographic: 1
+  orthographic size: 16
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
