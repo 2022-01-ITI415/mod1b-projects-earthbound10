@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   applePrefab: {fileID: 0}
-  speed: 1
+  speed: 0.1
   leftAndRightEdge: 10
   chanceToChangeDirection: 0.1
   secondsBetweenAppleDrop: 1
@@ -328,6 +328,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -739331571260811754, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 8608156727635080529, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
       propertyPath: m_Name
       value: Apple Tree

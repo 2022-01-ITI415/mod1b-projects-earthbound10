@@ -15,6 +15,22 @@ public class AppleTree : MonoBehaviour {
 
     }             
     void Update () {
- 
+        Vector3 pos = transform.position;
+        pos.x += speed + Time.deltaTime;
+        pos.x += 1.0f * .01f;
+        pos.x += .01f;
+        transform.position = pos;
+        if (pos.x < -leftAndRightEdge)
+        {
+            speed = Mathf.Abs(speed);
+        }
+        else if (pos.x > leftAndRightEdge)
+        {
+            speed = -Mathf.Abs(speed);
+        }
+        else if (Random.value < chanceToChangeDirection)
+        {
+            speed *=-1;
+        }
     }
 }
