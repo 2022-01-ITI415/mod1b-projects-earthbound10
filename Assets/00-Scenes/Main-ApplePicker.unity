@@ -211,23 +211,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5618838540343777716, guid: 86bbaf00a23354ab3985045af4455ec6, type: 3}
   m_PrefabInstance: {fileID: 5618838540021613470}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &859068971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 859068970}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06567742cb4c34363a379e4d6fd41c1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
-  speed: 1
-  leftAndRightEdge: 10
-  chanceToChangeDirections: 0.1
-  secondsBetweenAppleDrops: 1
 --- !u!54 &859068972
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -240,7 +223,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -344,9 +327,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5618838538792847395, guid: 86bbaf00a23354ab3985045af4455ec6, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618838539380258143, guid: 86bbaf00a23354ab3985045af4455ec6, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5618838540343777716, guid: 86bbaf00a23354ab3985045af4455ec6, type: 3}
       propertyPath: m_Name
       value: AppleTree
+      objectReference: {fileID: 0}
+    - target: {fileID: 5618838540343777716, guid: 86bbaf00a23354ab3985045af4455ec6, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5618838540343777717, guid: 86bbaf00a23354ab3985045af4455ec6, type: 3}
       propertyPath: m_RootOrder
