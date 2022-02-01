@@ -140,9 +140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c263e8fe8db6b499b9663cdc410b9c6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  applePrefab: {fileID: 0}
-  speed: 0.1
-  leftAndRightEdge: 10
+  applePrefab: {fileID: 3426892894152131819, guid: dc0699ad765a048178908b674c540685, type: 3}
+  speed: 10
+  leftAndRightEdge: 20
   chanceToChangeDirection: 0.1
   secondsBetweenAppleDrop: 1
 --- !u!1 &792234105
@@ -330,7 +330,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -739331571260811754, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
       propertyPath: speed
-      value: 0.1
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -739331571260811754, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: applePrefab
+      value: 
+      objectReference: {fileID: 3426892894152131819, guid: dc0699ad765a048178908b674c540685, type: 3}
+    - target: {fileID: -739331571260811754, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: leftAndRightEdge
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8608156727635080529, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
       propertyPath: m_Name
@@ -379,6 +387,10 @@ PrefabInstance:
     - target: {fileID: 8608156727635080530, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608156727635080531, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a8410196f9eb43dabc503ac97b245ec, type: 3}
