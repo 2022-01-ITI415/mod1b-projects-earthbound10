@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5192090235106110352}
   - component: {fileID: 3057433535349254397}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Basket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 8097365209365517170}
   - component: {fileID: 2650865218273360902}
   - component: {fileID: 1025135172881435828}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Handle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 4871799550082266026}
   - component: {fileID: 2973466311318600186}
   - component: {fileID: 494311524937815076}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Handle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 4821883885444266220}
   - component: {fileID: 3355494086645845148}
   - component: {fileID: 7792303018903508415}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Straw Basket
   m_TagString: Untagged
   m_Icon: {fileID: 0}

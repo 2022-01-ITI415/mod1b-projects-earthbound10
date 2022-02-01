@@ -19,13 +19,17 @@ public class AppleTree : MonoBehaviour {
        GameObject apple = Instantiate( applePrefab ) as GameObject; 
        apple.transform.position = transform.position;
        Invoke ("DropApple", secondsBetweenAppleDrop);
-    }          
+    } 
+    public static float bottomY = -20f;         
     void Update () {
         Vector3 pos = transform.position;
         pos.x += speed + Time.deltaTime;
         pos.x += 1.0f * .01f;
         pos.x += .01f;
         transform.position = pos;
+        if (transform.position.y < bottomY){
+            Destroy (this.gameObject);
+        }
         if (pos.x < -leftAndRightEdge)
         {
             speed = Mathf.Abs(speed);
