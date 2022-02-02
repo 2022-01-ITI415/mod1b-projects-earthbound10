@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ApplePicker : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class ApplePicker : MonoBehaviour
         basketList.RemoveAt(basketIndex);
         Destroy(tBasketGO);
         if (basketList.Count == 0 ){
-            Application.LoadLevel("Main-ApplePicker");
+            SceneManager.LoadScene("Main-ApplePicker");
         }
     }
     void Update()

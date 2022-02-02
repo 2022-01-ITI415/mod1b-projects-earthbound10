@@ -5,12 +5,12 @@ using UnityEngine.UI;
 public class Basket : MonoBehaviour
 {
     [Header("Set Dynamically")]
-    public GUIText scoreGT;
+    public Text scoreGT;
     // Start is called before the first frame update
     void Start()
     {
         GameObject scoreGO = GameObject.Find("ScoreCounter");
-        scoreGT = scoreGO.GetComponent<GUIText>();
+        scoreGT = scoreGO.GetComponent<Text>();
         scoreGT.text = "0";
     }
 
