@@ -11,11 +11,12 @@ public float chanceToChangeDirections = 0.1f;
 public float secondsBetweenAppleDrops = 1f;
 void Start () 
     {
-        InvokeRepeating("DropApple", 2f, secondsBetweenAppleDrops);
+        Invoke("DropApple", 2f);
     }
 void DropApple(){
-    GameObject apple = Instantiate (applePrefab) as GameObject;
+    GameObject apple = Instantiate<GameObject> (applePrefab);
     apple.transform.position = transform.position;
+    Invoke ("DropApple", secondsBetweenAppleDrops);
 }
 void Update () 
     {
