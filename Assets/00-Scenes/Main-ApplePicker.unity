@@ -685,7 +685,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7846791635618506024, guid: 86bbaf00a23354ab3985045af4455ec6, type: 3}
       propertyPath: speed
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5618838538792847395, guid: 86bbaf00a23354ab3985045af4455ec6, type: 3}
       propertyPath: m_Layer
