@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class MissionDemolition : MonoBehaviour
-{
-    public enum GameMode{
+using UnityEngine.UI;
+public enum GameMode{
         idle,
         playing,
         levelEnd
     }
-    public class MissionDemolition:MonoBehaviour{
+public class MissionDemolition : MonoBehaviour
+{
+    
         static private MissionDemolition S;
         [Header("Set in Inspector")]
         public Text uitLevel;
@@ -23,7 +23,6 @@ public class MissionDemolition : MonoBehaviour
         public int shotsTaken;
         public GameObject castle;
         public GameMode mode = GameMode.idle;
-    }
     public string showing = "Show Slingshot";
     void Start(){
         S = this;
@@ -40,21 +39,21 @@ public class MissionDemolition : MonoBehaviour
         Destroy(pTemp);
     }
     castle = Instantiate<GameObject>(castles[level]);
-    castle.transform.position = castle.Pos;
+    castle.transform.position = castlePos;
     shotsTaken = 0;
     SwitchView("wShow Both");
     ProjectileLine.S.Clear();
     Goal.goalMet = false;
     UpdateGUI();
-    GameMode = GameMode.playing;
+    mode = GameMode.playing;
   }
    void UpdateGUI(){
-       uitLevel.text = "Level: " +(StartLevel+1)+ " of " +levelMax;
-       utiShots.text = "Shots Taken: " +shotsTaken;
+       uitLevel.text = "Level: " +(level+1)+ " of " +levelMax;
+       uitShots.text = "Shots Taken: " +shotsTaken;
    } 
     void Update(){
         UpdateGUI();
-        if((mode==GameMode.playing)** Goal.goalMet){
+        if((mode==GameMode.playing)&& Goal.goalMet){
             mode = GameMode.levelEnd;
             SwitchView("Show Both");
             Invoke("NextLevel" ,2f);

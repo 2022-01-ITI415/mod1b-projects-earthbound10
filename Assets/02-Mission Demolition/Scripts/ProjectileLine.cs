@@ -9,8 +9,8 @@ public class ProjectileLine : MonoBehaviour
    public float minDist = .1f;
    private LineRenderer line;
    private GameObject _poi;
-   private List<Vector3> points
-   void Awale(){
+   private List<Vector3> points;
+   void Awake(){
        S=this;
        line = GetComponent<LineRenderer>();
        line.enabled = false;
@@ -25,7 +25,7 @@ public class ProjectileLine : MonoBehaviour
            if(_poi!=null){
                line.enabled = false;
                points = new List<Vector3>();
-               Addpoint();
+               AddPoint();
            }
        }
    }
@@ -72,6 +72,9 @@ public class ProjectileLine : MonoBehaviour
                else{
                    return;
                }
+           }
+           else{
+               return;
            }
        }
        AddPoint();
