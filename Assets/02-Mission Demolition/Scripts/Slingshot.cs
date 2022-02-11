@@ -56,11 +56,11 @@ public class Slingshot : MonoBehaviour
         }
         Vector3 projPos = launchPos + mouseDelta;
         projectile.transform.position = projPos;
-        if (Input.GetMouseButtonUp(0)){
+        if(Input.GetMouseButtonUp(0)){
             aimingMode = false;
-            projectileRigidbody.isKinematic = false;
-            projectileRigidbody.velocity = -mouseDelta * velocityMult;
-            projecticle = null;
-        }
+            projecticleRigidbody.isKinematic = false;
+            projecticleRigidbody.velocity = -mouseDelta * velocityMult;
+            projectile = null;
+        } 
     }
 }
