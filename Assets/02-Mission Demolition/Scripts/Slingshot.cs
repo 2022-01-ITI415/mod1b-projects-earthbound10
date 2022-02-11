@@ -6,7 +6,7 @@ public class Slingshot : MonoBehaviour
 {
     [Header("Set in Inspector")]
     [Header("Set Dynamically")]
-    public float velocityMult = 8f;
+    public float velocityMult = 10f;
     private Rigidbody projecticleRigidbody;
     public GameObject prefabProjectile;
     public GameObject launchPoint;
@@ -31,7 +31,7 @@ public class Slingshot : MonoBehaviour
         aimingMode = true;
         projectile = Instantiate (prefabProjectile) as GameObject;
         projectile.transform.position = launchPos;
-        projectile.GetComponent<Rigidbody>().isKinematic = true;
+        //projectile.GetComponent<Rigidbody>().isKinematic = true;
         projecticleRigidbody = projecticleRigidbody.GetComponent<Rigidbody>();
         projecticleRigidbody.isKinematic = true;
     }
