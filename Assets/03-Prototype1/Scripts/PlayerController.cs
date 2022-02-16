@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,8 +9,11 @@ public class PlayerController : MonoBehaviour
    public Text countText;
    public Text winText;
 
+   public Text lifeText;
+
    private Rigidbody rb;
    private int count;
+   private int life = 3;
 
    void Start ()
    {
@@ -41,9 +45,15 @@ public class PlayerController : MonoBehaviour
          winText.text = "You Win!";
       }
    }
+   void LifeCounter(){
+      lifeText.text = "Lives: " +life.ToString();
+      if(life<=0){
+         SceneManager.LoadScene("Main-Prototype 1");
+      }
+   }
     void OnCollisionEnter (Collision coll){
     GameObject collidedWith = coll.gameObject;
-    if(collidedWith.tag == "Apps"){
+    if(collidedWith.tag == "Apple"){
        Destroy(collidedWith);
         }
     }
