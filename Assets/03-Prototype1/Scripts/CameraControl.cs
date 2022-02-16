@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraControl : MonoBehaviour
 {
   public GameObject player;
   private Vector3 offset; 
@@ -14,3 +14,4 @@ public class CameraController : MonoBehaviour
   }
   
 }
+ 
