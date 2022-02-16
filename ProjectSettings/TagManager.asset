@@ -7,6 +7,7 @@ TagManager:
   - Apple
   - Projectile
   - Pick Up
+  - Apps
   layers:
   - Default
   - TransparentFX
@@ -19,10 +20,10 @@ TagManager:
   - Apple Tree
   - Apple
   - Basket
-  - 
-  - 
-  - 
-  - 
+  - Tree
+  - Tree 1
+  - Tree 2
+  - Apps
   - 
   - 
   - 

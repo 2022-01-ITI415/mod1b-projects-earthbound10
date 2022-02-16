@@ -40,6 +40,11 @@ public class PlayerController : MonoBehaviour
       if (count>=8){
          winText.text = "You Win!";
       }
-
    }
+    void OnCollisionEnter (Collision coll){
+    GameObject collidedWith = coll.gameObject;
+    if(collidedWith.tag == "Apps"){
+       Destroy(collidedWith);
+        }
+    }
 }
