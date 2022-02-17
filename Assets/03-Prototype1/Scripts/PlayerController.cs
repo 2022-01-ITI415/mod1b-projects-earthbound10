@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class PlayerController : MonoBehaviour
 {
@@ -58,6 +59,7 @@ public class PlayerController : MonoBehaviour
    void LifeCounter(){
       lifeText.text = "Lives: " +life.ToString();
       if(life<=0){
+         winText.text = "You Lose!";
          SceneManager.LoadScene("Main-Prototype 1");
       }
    }
