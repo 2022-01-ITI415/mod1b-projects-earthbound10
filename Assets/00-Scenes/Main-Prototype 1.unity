@@ -172,7 +172,7 @@ MonoBehaviour:
   speed: 10
   leftAndRightEdge: 7.5
   chanceToChangeDirections: 0.1
-  secondsBetweenAppleDrops: 1
+  secondsBetweenAppleDrops: 2
 --- !u!1 &39855356
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +560,7 @@ MonoBehaviour:
   speed: 15
   leftAndRightEdge: 7.5
   chanceToChangeDirections: 0.1
-  secondsBetweenAppleDrops: 1
+  secondsBetweenAppleDrops: 2
 --- !u!1 &474841632
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,10 +2092,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   applePrefab: {fileID: 707089804205923577, guid: c716ac6799e01480da8266dc0d676551, type: 3}
-  speed: 0
+  speed: 15
   leftAndRightEdge: 7.5
   chanceToChangeDirections: 0.1
-  secondsBetweenAppleDrops: 1
+  secondsBetweenAppleDrops: 2
 --- !u!1 &1105653169
 GameObject:
   m_ObjectHideFlags: 0
