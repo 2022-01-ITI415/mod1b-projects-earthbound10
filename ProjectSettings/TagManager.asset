@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Apple
+  - Projectile
+  - Pick Up
+  - Apps
   layers:
   - Default
   - TransparentFX
@@ -13,13 +17,13 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Apple Tree
+  - Apple
+  - Basket
+  - Tree
+  - Tree 1
+  - Tree 2
+  - Apps
   - 
   - 
   - 
