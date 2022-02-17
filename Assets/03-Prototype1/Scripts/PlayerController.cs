@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
    void Start ()
    {
    	rb = GetComponent<Rigidbody>();
+      LifeCounter();
    }
 
    void FixedUpdate()
@@ -37,6 +38,14 @@ public class PlayerController : MonoBehaviour
          SetCountText();
       }
    }
+   void OnCollisionEnter (Collision other){
+      if(other.gameObject.CompareTag("Apps"))
+      {
+         other.gameObject.SetActive(false);
+         life = life - 1;
+         LifeCounter();
+      }
+   }
 
    void SetCountText()
    {
@@ -51,10 +60,4 @@ public class PlayerController : MonoBehaviour
          SceneManager.LoadScene("Main-Prototype 1");
       }
    }
-    void OnCollisionEnter (Collision coll){
-    GameObject collidedWith = coll.gameObject;
-    if(collidedWith.tag == "Apple"){
-       Destroy(collidedWith);
-        }
-    }
 }
