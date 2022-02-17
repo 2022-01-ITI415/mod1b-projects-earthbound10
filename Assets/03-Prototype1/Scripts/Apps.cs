@@ -9,7 +9,7 @@ public class Apps : MonoBehaviour
     void Update()
     {
      if (transform.position.y < bottomY){
-        Destroy (this.gameObject, 0.15f);
+        Destroy (this.gameObject, 0.05f);
      }
     }
 

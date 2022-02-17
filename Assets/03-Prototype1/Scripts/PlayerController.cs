@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
    {
    	rb = GetComponent<Rigidbody>();
       LifeCounter();
+      SetCountText();
    }
 
    void FixedUpdate()
