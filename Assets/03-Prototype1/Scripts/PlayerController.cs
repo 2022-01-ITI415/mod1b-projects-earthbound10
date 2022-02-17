@@ -48,7 +48,6 @@ public class PlayerController : MonoBehaviour
          LifeCounter();
       }
    }
-
    void SetCountText()
    {
       countText.text = "Count: " + count.ToString();
